@@ -24,17 +24,15 @@ public class Atencion {
         this.costo = costo;
         this.mascota = mascota;
         this.cantidadRecetas = cantidadRecetas;
-         this.recetaList = new Receta[this.cantidadRecetas];
+        this.recetaList = new Receta[this.cantidadRecetas];
     }
 
-   
-    
-
-   
      public void nuevaReceta(String medicamentos,int cantidad,String indicaciones, int posicion){
          var receta = new Receta(medicamentos,cantidad,indicaciones);
          this.recetaList[posicion]=receta;
+         System.out.println("\n");
      }
+     
 
     public void setFecha(LocalDate fecha) {
         this.fecha = fecha;
@@ -86,11 +84,14 @@ public class Atencion {
 
     @Override
     public String toString() {
-        return "Atencion{" + "fecha=" + fecha + ", "
+        var retorno= "Atencion{" + "fecha=" + fecha + ", "
                 + "veterinario=" + veterinario + ", costo="
-                + costo + ", mascota=" + mascota + ", cantidadRecetas=" 
-                + cantidadRecetas + ", recetaList 1 =" + recetaList[0].toString()
-                +"receta 2="+recetaList[1].toString()+"receta 3="+recetaList[2].toString() +'}';
+                + costo + ", mascota=" +mascota   +'}'+"\n";
+        
+         for (var i =0;i<this.cantidadRecetas;i++){
+             retorno+=this.recetaList[i].toString()+"\n";
+         }
+        return retorno;
     }
     
     

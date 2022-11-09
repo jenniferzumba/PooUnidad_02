@@ -60,10 +60,15 @@ public class Owner {
 
      @Override
      public String toString() {
-         return "Due\u00f1o{" + "cedula=" + cedula + ", nombre=" + nombre 
+         var retorno = "Due\u00f1o{" + "cedula=" + cedula + ", nombre=" + nombre 
                  + ", cantidadTelefonos=" + cantidadTelefonos 
-                 + ", telefonoList=" + telefonoList[0].toString() +"telefonoList2="
-                 +telefonoList[1]+" telefonoList3="+telefonoList[2]+ '}';
+                 +  '}'+"\n";
+         
+         for (var i =0;i<this.cantidadTelefonos;i++){
+             retorno+=this.telefonoList[i].toString()+"\n";
+         }
+         
+         return retorno;
      }
 
     

@@ -62,6 +62,13 @@ public class Mascota {
     public Owner getOwner() {
         return owner;
     }
+
+    @Override
+    public String toString() {
+        return "Mascota{" + "nombre=" + nombre + 
+                ", tipoAnimal=" + tipoAnimal + ", raza=" +
+                raza + ", peso=" + peso + ", owner=" + owner + '}'+"\n";
+    }
     
     
     
