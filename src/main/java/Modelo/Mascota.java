@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package p61.unidad02_01;
+package Modelo;
 
 /**
  *
@@ -62,6 +62,7 @@ public class Mascota {
     public Owner getOwner() {
         return owner;
     }
+    
 
     @Override
     public String toString() {
