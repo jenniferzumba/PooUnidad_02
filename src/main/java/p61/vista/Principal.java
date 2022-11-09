@@ -2,13 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Vista;
+package p61.vista;
 
 import java.time.LocalDate;
 import java.time.Month;
-import Modelo.Atencion;
-import Modelo.Mascota;
-import Modelo.Owner;
+import p61.modelo.Atencion;
+import p61.modelo.Mascota;
+import p61.modelo.Owner;
 
 /**
  *
