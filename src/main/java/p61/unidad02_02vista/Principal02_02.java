@@ -7,6 +7,8 @@ package p61.unidad02_02vista;
 import java.time.LocalDate;
 import java.time.Month;
 import p61.unidad02_02modelo.Atencion;
+import p61.unidad02_02modelo.Carrera;
+import p61.unidad02_02modelo.Estudiante;
 import p61.unidad02_02modelo.Mascota;
 import p61.unidad02_02modelo.Owner;
 
@@ -16,7 +18,7 @@ import p61.unidad02_02modelo.Owner;
  */
 public class Principal02_02 {
     public static void main(String[]args){
-        var juana =new Owner("096487365426","juana moreno avila ");
+       /* var juana =new Owner("096487365426","juana moreno avila ");
         juana.nuevoTelefono("962364532", 0, "movil personal", "bellacut");
         juana.nuevoTelefono("672651623735", 0, "casa", "etapa");
         juana.nuevoTelefono("029849572847", 0, "movil", "movistar");
@@ -30,7 +32,26 @@ public class Principal02_02 {
          
         System.out.println(juana.toString());
         System.out.println(mascota.toString());
-        System.out.println(atencion.toString());
+        System.out.println(atencion.toString());*/
+        
+        
+        var pedro= new Estudiante("743625716617", "pedro");
+        var luis =new Estudiante("357715676364", "luis");
+        
+        var tele=new Carrera("Ingenieria en telecomunicaciones",8);
+        tele.agregarEstudiante(pedro);
+        tele.agregarEstudiante(luis);
+        
+        var elec=new Carrera("Ingenieria electronica",8);
+        elec.agregarEstudiante(pedro);
+        elec.agregarEstudiante(luis);
+        
+        System.out.println(tele.toString());
+        System.out.println(elec.toString());
+        
+        
+        
+        
         
         
         
