@@ -35,7 +35,7 @@ public class Estudiante {
 
     @Override
     public String toString() {
-        return "Estudiante{" + "cedula=" + cedula + ", nombre=" + nombre + "\n"+'}';
+        return "Estudiante{" + "cedula=" + cedula + ", nombre=" + nombre + '}';
     }
     
     
