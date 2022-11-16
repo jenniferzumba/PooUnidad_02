@@ -12,7 +12,7 @@ import javax.swing.JFrame;
  */
 public class Principal {
     public  static void main(String[]args){
-        var ventana0301=new JFrame();
+       /* var ventana0301=new JFrame();
         ventana0301.setTitle("ventana Unidad 03_01a");
         ventana0301.setSize(800,600);
         ventana0301.setLocation(200, 100);
@@ -40,11 +40,25 @@ public class Principal {
         ventana4.setSize(400,300);
         ventana4.setLocation(200, 200);
         ventana4.setVisible(true);
-        ventana4.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        ventana4.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);*/
+        
+        
+        var ventana1=new Ventana0301a("ecuador");
+        ventana1.iniciarComponentes();
+       // var ventana2=new Ventana0301a("Qatar");
+       // var ventana3=new Ventana0301a("Senegal");
+       // var ventana4=new Ventana0301a("paises bajos");
+        
+        
+        ventana1.setVisible(true);
+        
+       // ventana2.setVisible(true);
+       // ventana3.setVisible(true);
+       // ventana4.setVisible(true);
         
         
         
-        
+       
         
     }
     
